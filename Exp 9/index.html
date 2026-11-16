@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exp 9 - Web Storage</title>
+</head>
+<body>
+    <h2>Theme Settings (Web Storage)</h2>
+
+    <label>Select Theme: </label>
+    <select id="themeSelect" onchange="applyTheme(this.value)">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+    <br><br>
+
+    <button onclick="saveLocal()">Save using localStorage</button>
+    <button onclick="saveSession()">Save using sessionStorage</button>
+    <button onclick="clearStorage()">Clear Preferences</button>
+
+    <h3>Storage Status</h3>
+    <p>localStorage value: <strong id="localStatus">null</strong></p>
+    <p>sessionStorage value: <strong id="sessionStatus">null</strong></p>
+    <p id="msg"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

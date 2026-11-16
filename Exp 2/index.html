@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exp 2 - Billing System</title>
+</head>
+<body>
+    <h2>Billing System</h2>
+    
+    <label>Customer Name: </label>
+    <input type="text" id="custName" value="Customer Name"><br><br>
+
+    <label>Product Name: </label>
+    <input type="text" id="prodName" value="Notebook"><br><br>
+
+    <label>Quantity: </label>
+    <input type="number" id="qty" value="2"><br><br>
+
+    <label>Unit Price (₹): </label>
+    <input type="number" id="price" value="50"><br><br>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <h3>Receipt</h3>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

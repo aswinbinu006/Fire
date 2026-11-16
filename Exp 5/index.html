@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exp 5 - Cart Calculator</title>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+
+    <label>Item Name: </label>
+    <input type="text" id="name">
+    <label>Price (₹): </label>
+    <input type="number" id="price" step="any">
+    <label>Qty: </label>
+    <input type="number" id="qty" value="1">
+    <button onclick="addItem()">Add Item</button>
+
+    <h3>Cart Items</h3>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cartTable"></tbody>
+    </table>
+
+    <h3>Bill Summary</h3>
+    <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+    <p>Discount (10% if > ₹500): ₹<span id="discount">0.00</span></p>
+    <p><strong>Final Total: ₹<span id="total">0.00</span></strong></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

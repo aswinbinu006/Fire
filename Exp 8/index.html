@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exp 8 - Gym Admission Form</title>
+</head>
+<body>
+    <h2>Gym Admission Form</h2>
+
+    <form id="gymForm">
+        <label>Full Name: </label>
+        <input type="text" id="name">
+        <span id="errName" style="color: red;"></span><br><br>
+
+        <label>Email: </label>
+        <input type="email" id="email">
+        <span id="errEmail" style="color: red;"></span><br><br>
+
+        <label>Phone (10 digits): </label>
+        <input type="text" id="phone" maxlength="10">
+        <span id="errPhone" style="color: red;"></span><br><br>
+
+        <label>Age (14 - 80): </label>
+        <input type="number" id="age">
+        <span id="errAge" style="color: red;"></span><br><br>
+
+        <label>Membership Plan: </label>
+        <select id="plan">
+            <option value="">Select Plan</option>
+            <option value="Monthly (₹1500)">Monthly (₹1500)</option>
+            <option value="Quarterly (₹4000)">Quarterly (₹4000)</option>
+            <option value="Yearly (₹12000)">Yearly (₹12000)</option>
+        </select>
+        <span id="errPlan" style="color: red;"></span><br><br>
+
+        <button type="submit">Submit Admission</button>
+    </form>
+
+    <div id="output" style="margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
